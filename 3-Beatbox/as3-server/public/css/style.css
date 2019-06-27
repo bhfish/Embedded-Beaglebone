@@ -1,0 +1,30 @@
+.selection {
+	border-style:solid;
+	padding: 50px 50px 50px 50px;
+	float: left;
+	margin:5px 5px 5px 5px;
+}
+
+.status{
+	border-style:solid;
+	padding: 50px 50px 50px 50px;
+	float: left;
+	margin:5px 5px 5px 5px;
+}
+#error{
+	padding: 50px 50px 50px 50px;
+	margin:5px 5px 5px 5px;
+	float: left;
+}
+#volumeValue{
+	width: 60px;
+}
+#tempoValue{
+	width: 60px;
+}
+#error{
+	border-style:solid;
+	background-color: red;
+	border-width: 1px;
+	display: none;
+}

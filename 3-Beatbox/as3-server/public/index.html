@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>BeagleBone Beat-Box</title>
+	<link rel="stylesheet" href="css/style.css" type="text/css"/>
+	<script type='text/javascript' src='/socket.io/socket.io.js'></script>
+	<script type="text/javascript" src="js/jquery-3.2.1.js"></script>
+	<script type="text/javascript" src="js/beatbox_ui.js"></script>
+	
+</head>
+<body>
+	<h1>BeagleBone Beat-Box</h1>
+	<p>by Baihui Zhang, Chenxia Dun</p>
+	<div class="selection">
+		
+		<h2>Drum Beat Selection</h2>
+		<p>Current drum beat mode is:  <span id="currentMode"><b>need get mode</b></span></p>
+		<button id="mode_none">None</button>  <button id="mode_rock">Rock</button>  <button id="mode_custom">Custom</button>
+		<h2>Volume</h2>
+			<button id="volumeDown">-</button>
+			<input type="text" id="volumeValue" value="80" readonly="readonly">
+  			<button id="volumeUp">+</button>
+  					
+		<h2>Tempo</h2>
+			<button id="tempoDown"">-</button>
+			<input type="text" id="tempoValue" value="120 BPM" readonly="readonly">
+  			<button id="tempoUp">+</button>
+  				
+		<h2>Play Drum Sound</h2>
+		<button id="hihat">Hit-Hat</button>  <button id="snare">Snare</button>  <button id="base">Base</button>
+	</div>
+	<div class="status">
+		<h2>BeatBox's Status</h2>
+		<p>Device up for:</p><div id="uptime"></div>
+	</div>
+	<div id="error"></div>
+</body>
+</html>
